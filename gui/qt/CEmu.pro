@@ -65,7 +65,7 @@ CONFIG(release, debug|release) {
 }
 
 # TODO Lua: adjust options by platforms, see Makefile
-
+GLOBAL_FLAGS += -DLUA_USE_LONGJMP
 
 # GCC/clang flags
 if (!win32-msvc*) {
